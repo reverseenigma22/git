@@ -1,1 +1,129 @@
-add a new line from github
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Ticket Booking</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background: #f2f2f2;
+        }
+
+        header {
+            background: #d32f2f;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .container {
+            width: 400px;
+            margin: 40px auto;
+            background: white;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.2);
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            margin-top: 15px;
+            font-weight: bold;
+        }
+
+        input, select {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        button {
+            width: 100%;
+            background: #d32f2f;
+            color: white;
+            border: none;
+            padding: 12px;
+            margin-top: 25px;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #b71c1c;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 20px;
+            color: gray;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>🎬 Movie Ticket Booking</h1>
+</header>
+
+<div class="container">
+
+    <h2>Book Your Ticket</h2>
+
+    <form>
+
+        <label>Full Name</label>
+        <input type="text" placeholder="Enter your name" required>
+
+        <label>Select Movie</label>
+        <select required>
+            <option>-- Select Movie --</option>
+            <option>Avatar 3</option>
+            <option>Mission Impossible</option>
+            <option>Jurassic World</option>
+            <option>Pushpa 3</option>
+            <option>Salaar 2</option>
+        </select>
+
+        <label>Select Date</label>
+        <input type="date" required>
+
+        <label>Select Show Time</label>
+        <select required>
+            <option>10:00 AM</option>
+            <option>1:00 PM</option>
+            <option>4:00 PM</option>
+            <option>7:00 PM</option>
+            <option>10:00 PM</option>
+        </select>
+
+        <label>Number of Tickets</label>
+        <input type="number" min="1" max="10" value="1">
+
+        <button type="submit">Book Now</button>
+
+    </form>
+
+</div>
+
+<footer>
+    <p>© 2026 Movie Ticket Booking</p>
+</footer>
+
+</body>
+</html>
